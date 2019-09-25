@@ -10,7 +10,7 @@
          from email.mime.text import MIMEText
          
          def sync_start() -> None:
-           cchecker_mail: CheckerEmail.CheckerEmail = CheckerEmail.CheckerEmail(hostname_mail=smtp_host,
+           checker_mail: CheckerEmail.CheckerEmail = CheckerEmail.CheckerEmail(hostname_mail=smtp_host,
                                                                     port=smtp_port, password=smtp_password,
                                                                     login=smtp_login)
            check.change_len_code(new_len_code=5)
