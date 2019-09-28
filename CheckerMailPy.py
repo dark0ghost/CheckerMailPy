@@ -74,7 +74,7 @@ class CheckerEmail:
 
     async def async_send_message(self, start_tls: bool = False, use_tls: bool = False) -> None:
         """
-        asunc out
+        async out
         :return:
         """
         await self.client.connect(hostname=self.host_name, port=self.port, use_tls=use_tls, start_tls=start_tls)
@@ -84,7 +84,7 @@ class CheckerEmail:
 
     def sync_send_message(self, start_tls: bool = False, use_tls: bool = False) -> None:
         """
-        for sync sync code
+        for sync  code
 
         """
         loop = asyncio.get_event_loop()
