@@ -72,7 +72,7 @@ class CheckerEmail:
         self.message["To"] = to
         self.message["Subject"] = subject
 
-    async def async_send_message(self, start_tls=False, use_tls=False) -> None:
+    async def async_send_message(self, start_tls: bool = False, use_tls: bool = False) -> None:
         """
         asunc out
         :return:
@@ -82,10 +82,10 @@ class CheckerEmail:
             await self.client.send_message(self.message)
             print(200)
 
-    def sync_send_message(self) -> None:
+    def sync_send_message(self, start_tls: bool = False, use_tls: bool = False) -> None:
         """
         for sync sync code
 
         """
         loop = asyncio.get_event_loop()
-        loop.run_until_complete(self.async_send_message())
+        loop.run_until_complete(self.async_send_message(start_tls=start_tls, use_tls=use_tls))
