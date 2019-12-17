@@ -6,7 +6,7 @@ requirements = [
 
 setup(
     name='CheckerMailPy',
-    version='0.0.1 alpha',
+    version='1.0.0',
     description="CheckerMailPy",
     author="dark0ghost",
     url='https://github.com/dark0ghost/soks5-parser/',
