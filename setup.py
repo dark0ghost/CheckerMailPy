@@ -1,7 +1,7 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+from os.path import join, dirname
 requirements = [
-"aiohttp",
-"bs4"
+"aiosmtplib"
 ]
 
 setup(
@@ -10,9 +10,7 @@ setup(
     description="CheckerMailPy",
     author="dark0ghost",
     url='https://github.com/dark0ghost/soks5-parser/',
-    packages=[
-        'aiosmtplib',
-    ],
+    packages=find_packages(),
     package_dir={'CheckerMailPy':
                      'CheckerMailPy'},
     include_package_data=True,
@@ -24,4 +22,5 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
     ],
+    long_description=open(join(dirname(__file__), 'README.txt')).read(),
 )
