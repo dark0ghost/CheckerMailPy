@@ -1,7 +1,8 @@
 #CheckerMailPy
 
 ## How to install:
-	git clone https://github.com/dark0ghost/CheckerMailPy.git
+	 pip install git+https://github.com/dark0ghost/CheckerMailPy.git
+
   
   
 ## How to use (sync):
