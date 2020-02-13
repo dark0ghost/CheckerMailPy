@@ -80,7 +80,7 @@ class CheckerEmail:
         await self.client.connect(hostname=self.host_name, port=self.port, use_tls=use_tls, start_tls=start_tls)
         async with self.client:
             await self.client.send_message(self.message)
-            print(200)
+           
 
     def sync_send_message(self, start_tls: bool = False, use_tls: bool = False) -> None:
         """
